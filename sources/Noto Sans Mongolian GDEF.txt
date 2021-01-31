@@ -1675,6 +1675,13 @@ u1848_1843.ini	1
 u1848_1843.med	1
 MongolianGejige	1
 MongolianEber	1
+MongolianSingleDot	1
+MongolianDoubleDotF	1
+MongolianDoubleDotB	1
+MongolianTail	1
+MongolianCircle	1
+MongolianZardig	1
+MongolianTitem	1
 FVS1.V1	1
 FVS2.V1	1
 FVS3.V1	1
@@ -1782,4 +1789,5 @@ FVS1	1
 FVS2	1
 FVS3	1
 FVS4	1
+u180A	2
 class definition end

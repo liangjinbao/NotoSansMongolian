@@ -11,7 +11,7 @@ feature table begin
 1	init	2, 6
 2	isol	0, 1, 5
 3	medi	3, 7
-4	rlig	8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39
+4	rlig	8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,40
 5	vert	80
 
 feature table end
@@ -41,6 +41,7 @@ u1833.isoV1	u1833	FVS1
 u1831.isoV1	u1831	FVS1
 u1821.iso	u1820	FVS1
 u1820.isoV1	u1820	FVS2
+u1820.V1	u1820	FVS1
 u182C.isoV3	u182C	FVS4
 u182C.isoV2	u182C	FVS2
 u182C.isoV1	u182C	FVS1
@@ -1219,7 +1220,6 @@ u1824.fin	1
 u1825.fin	2
 u1826.fin	2
 u1820.fin	3
-u1821.fin	4
 class definition end
 
 class-chain	1	1		1, 56
@@ -1232,14 +1232,44 @@ class-chain	4	2		1, 79
 class-chain	5	2		1, 79
 class-chain	3	3		1, 79
 class-chain	4	3		1, 79
-class-chain	2	4		1, 79
-class-chain	3	4		1, 79
-class-chain	4	4		1, 79
-class-chain	5	4		1, 79
 
 lookup end
 
 lookup	16	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	2
+
+backtrackclass definition begin
+u182C.iniV2	1
+u182D.iniV2	1
+u182A.ini	2
+u182B.ini	2
+u1839.ini	2
+u183A.ini	2
+u183B.ini	2
+u182A.med	3
+u182B.med	3
+u1839.med	3
+u183A.med	3
+u183B.med	3
+u182C.medV2	4
+u182D.medV2	4
+class definition end
+
+class definition begin
+u1821.fin	1
+class definition end
+
+class-chain	1	1		1, 83
+class-chain	2	1		1, 83
+class-chain	3	1		1, 83
+class-chain	4	1		1, 83
+
+lookup end
+
+lookup	17	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1264,7 +1294,7 @@ class-chain		1	1	1, 57
 
 lookup end
 
-lookup	17	chained
+lookup	18	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1332,7 +1362,7 @@ class-chain		2	2	1, 58
 
 lookup end
 
-lookup	18	chained
+lookup	19	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1355,7 +1385,7 @@ class-chain		2	2	1, 60
 
 lookup end
 
-lookup	19	chained
+lookup	20	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1518,7 +1548,7 @@ class-chain		1	2	1, 75
 
 lookup end
 
-lookup	20	chained
+lookup	21	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1554,7 +1584,7 @@ class-chain	1	2		1, 76
 
 lookup end
 
-lookup	21	chained
+lookup	22	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1744,7 +1774,7 @@ class-chain	3	7		1, 75
 lookup end
 
 
-lookup	22	chained
+lookup	23	chained
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -1786,7 +1816,7 @@ class-chain	2	3		1, 76
 
 lookup end
 
-lookup	23	chained
+lookup	24	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1826,7 +1856,7 @@ glyph	MVS	u1833.ini, u1821.med, u182D.medV2, u1821.med, u1828.fin		1, 67
 glyph	MVS	u1833.ini, u1821.med, u182C.medV2, u1822.fin		1, 67
 glyph	MVS	u1833.ini, u1824.med, u182D.medV1, u1820.med, u1837.fin		1, 67
 glyph	MVS	u1833.ini, u1824.med, u1837.fin		1, 67
-glyph	MVS	u1833.ini, u1824.med, u1828.medV1, u1822.fin		1, 63
+glyph	MVS	u1833.ini, u1824.med, u1828.medV1, u1822.fin		1, 67
 glyph	MVS	u1833.iniV1, u1824.finV1		2, 66
 glyph	MVS	u1833.ini, u1826.medV1, u1837.fin		2, 65	1, 67
 glyph	MVS	u1833.ini, u1826.medV1, u1828.medV1, u1822.fin		2, 65	1, 67
@@ -1848,19 +1878,19 @@ glyph	MVS	u1873.iso		1, 61
 
 lookup end
 
-lookup	24	multiple
+lookup	25	multiple
 MVS	MVS.V1	ZMARK
 lookup end
 
-lookup	25	ligature
+lookup	26	ligature
 MVS.V1	MVS.V1	ZMARK
 lookup end
 
-lookup	26	multiple
+lookup	27	multiple
 MVS.V1	MVS.V1	ZMARK
 lookup end
 
-lookup	27	chained
+lookup	28	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1897,11 +1927,11 @@ class-chain	1	1	1,2	1, 72
 
 lookup end
 
-lookup	28	chained
+lookup	29	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	yes
+IgnoreMarks	no
 
 class definition begin
 u182F.fin	1
@@ -1914,17 +1944,22 @@ u1831.fin	1
 u1838.fin	1
 u1835.fin	1
 u1836.fin	1
-u182D.fin	1
-u182D.finV1	1
 u1835.iso	1
+u182D.fin	2
+u182D.finV1	2
 class definition end
 lookaheadclass definition begin
 MVS.V2	1
+ZMARK	2
+u1820.isoV1	3
+u1821.isoV1	4
 class definition end
 class-chain		1	1	1, 73
+class-chain		2	1,2,3	1, 73
+class-chain		2	1,2,4	1, 82
 lookup end
 
-lookup	29	chained
+lookup	30	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1945,19 +1980,24 @@ class-chain	1	1		1, 70
 
 lookup end
 
-lookup	30	ligature
+lookup	31	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+u1820.iso	u1820.isoV1	FVS3
+u1820.V1	u1820.isoV1	FVS1
+u1820.V1	u1820.iso	FVS1
 u1820.ini	u1820.iniV1	FVS2
 u1820.iniV1	u1820.ini	FVS1
 u1820.medV1	u1820.med	FVS1
 u1820.finV1	u1820.fin	FVS1
 u1820.fin	u1820.finV1	FVS2
+u1821.iso	u1821.isoV1	FVS2
 u1821.finV1	u1821.fin	FVS1
 u1821.fin	u1821.finV1	FVS2
 u1821.iniV1	u1821.ini	FVS1
+u1822.iso	u1822.isoV1	FVS3
 u1822.ini	u1822.iniV1	FVS2
 u1822.iniV1	u1822.ini	FVS1
 u1822.iniV1	u1822.iniFem	FVS1
@@ -1969,6 +2009,7 @@ u1822.medV2	u1822.medFem	FVS2
 u1823.fin	u1823.finV1	FVS2
 u1823.finV1	u1823.fin	FVS1
 u1823.medV1	u1823.med	FVS1
+u1824.iso	u1824.isoV1	FVS3
 u1824.ini	u1824.iniV1	FVS2
 u1824.fin	u1824.finV1	FVS2
 u1824.finV1	u1824.fin	FVS1
@@ -2061,7 +2102,7 @@ u1838.medV1	u1838.med	FVS1
 u1838.finV1	u1838.fin	FVS1
 lookup end
 
-lookup	31	chained
+lookup	32	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2114,7 +2155,7 @@ class-chain	1	1		1, 71
 
 lookup end
 
-lookup	32	ligature
+lookup	33	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2122,7 +2163,7 @@ IgnoreMarks	no
 u1822.med	u1822.medV2	FVS3
 lookup end
 
-lookup	33	ligature
+lookup	34	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2193,30 +2234,39 @@ u1836.iniV1	u1836.iniV1	FVS1
 u1836.med	u1836.med	FVS3
 u1836.medV1	u1836.medV1	FVS1
 u1838.medV2	u1838.medV2	FVS1
+MongolianGejige	u182E.iso	FVS3
+MongolianEber	u182F.iso	FVS3
+MongolianSingleDot	u1828.iso	FVS3
+MongolianCircle	u183C.iso	FVS3
+MongolianZardig	u183D.iso	FVS3
+MongolianTitem	u183F.iso	FVS3
+MongolianDoubleDotF	u182D.iso	FVS3
+MongolianDoubleDotB	u1831.iso	FVS3
+MongolianTail	u1825.iso	FVS3
 lookup end
 
-lookup	34	multiple
+lookup	35	multiple
 FVS1	FVS1.V1	ZMARK
 FVS2	FVS2.V1	ZMARK
 FVS3	FVS3.V1	ZMARK
 FVS4	FVS4.V1	ZMARK
 lookup end
 
-lookup	35	ligature
+lookup	36	ligature
 FVS1.V1	FVS1.V1	ZMARK
 FVS2.V1	FVS2.V1	ZMARK
 FVS3.V1	FVS3.V1	ZMARK
 FVS4.V1	FVS4.V1	ZMARK
 lookup end
 
-lookup	36	multiple
+lookup	37	multiple
 FVS1.V1	FVS1.V1	ZMARK
 FVS2.V1	FVS2.V1	ZMARK
 FVS3.V1	FVS3.V1	ZMARK
 FVS4.V1	FVS4.V1	ZMARK
 lookup end
 
-lookup	37	chained
+lookup	38	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2229,6 +2279,7 @@ class definition end
 lookaheadclass definition begin
 u1820.iso	1
 u1820.isoV1	1
+u1820.V1	1
 u1820.fin	1
 u1820.finV1	1
 u1820.ini	1
@@ -2469,7 +2520,7 @@ class-chain		1	2,1	1, 74
 
 lookup end
 
-lookup	38	single
+lookup	39	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2479,7 +2530,7 @@ u180A	u180A.ini
 
 lookup end
 
-lookup	39	ligature
+lookup	40	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3782,4 +3833,23 @@ IgnoreLigatures	no
 IgnoreMarks	yes
 
 u1832.med	u1832.medV1
+lookup end
+
+
+lookup	82	single
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u182D.fin	u182D.medV5
+u182D.finV1	u182D.medV5
+
+lookup end
+lookup	83	single
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	2
+u1821.fin	u1821.finV1
 lookup end

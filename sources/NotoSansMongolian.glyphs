@@ -1704,6 +1704,13 @@ u1848_1843.ini,
 u1848_1843.med,
 MongolianGejige,
 MongolianEber,
+MongolianSingleDot,
+MongolianDoubleDotF,
+MongolianDoubleDotB,
+MongolianTail,
+MongolianCircle,
+MongolianZardig,
+MongolianTitem,
 FVS1.V1,
 FVS2.V1,
 FVS3.V1,
@@ -84299,6 +84306,305 @@ width = 300;
 }
 );
 note = MongolianEber;
+},
+{
+glyphname = MongolianSingleDot;
+lastChange = "2021-01-06 14:39:15 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"292 -128 OFFCURVE",
+"338 -90 OFFCURVE",
+"398 -47 CURVE",
+"337 22 LINE",
+"298 -17 OFFCURVE",
+"257 -65 OFFCURVE",
+"216 -124 CURVE",
+"259 -163 LINE"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianDoubleDotF;
+lastChange = "2021-01-06 14:40:24 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"146 -128 OFFCURVE",
+"192 -90 OFFCURVE",
+"252 -47 CURVE",
+"191 22 LINE",
+"152 -17 OFFCURVE",
+"111 -65 OFFCURVE",
+"70 -124 CURVE",
+"113 -163 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"366 -128 OFFCURVE",
+"412 -90 OFFCURVE",
+"472 -47 CURVE",
+"411 22 LINE",
+"372 -17 OFFCURVE",
+"331 -65 OFFCURVE",
+"290 -124 CURVE",
+"333 -163 LINE"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianDoubleDotB;
+lastChange = "2021-01-06 14:41:50 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"146 212 OFFCURVE",
+"192 250 OFFCURVE",
+"252 293 CURVE",
+"191 362 LINE",
+"152 323 OFFCURVE",
+"111 275 OFFCURVE",
+"70 216 CURVE",
+"113 177 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"366 212 OFFCURVE",
+"412 250 OFFCURVE",
+"472 293 CURVE",
+"411 362 LINE",
+"372 323 OFFCURVE",
+"331 275 OFFCURVE",
+"290 216 CURVE",
+"333 177 LINE"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianTail;
+lastChange = "2021-01-06 14:54:09 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"259 272 OFFCURVE",
+"264 291 OFFCURVE",
+"264 314 CURVE SMOOTH",
+"264 397 OFFCURVE",
+"220 439 OFFCURVE",
+"139 439 CURVE SMOOTH",
+"4 439 LINE",
+"4 359 LINE",
+"139 359 LINE SMOOTH",
+"174 359 OFFCURVE",
+"187 343 OFFCURVE",
+"187 314 CURVE SMOOTH",
+"187 292 OFFCURVE",
+"183 273 OFFCURVE",
+"175 257 CURVE",
+"249 257 LINE"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianCircle;
+lastChange = "2021-01-06 14:49:28 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"413 -171 OFFCURVE",
+"471 -120 OFFCURVE",
+"471 -32 CURVE SMOOTH",
+"471 43 OFFCURVE",
+"421 100 OFFCURVE",
+"340 100 CURVE SMOOTH",
+"301 100 OFFCURVE",
+"268 85 OFFCURVE",
+"249 62 CURVE",
+"246 63 LINE",
+"245 64 OFFCURVE",
+"245 67 OFFCURVE",
+"245 71 CURVE SMOOTH",
+"245 86 LINE SMOOTH",
+"245 89 OFFCURVE",
+"245 92 OFFCURVE",
+"244 93 CURVE",
+"243 104 OFFCURVE",
+"242 114 OFFCURVE",
+"242 125 CURVE SMOOTH",
+"242 210 OFFCURVE",
+"251 279 OFFCURVE",
+"276 364 CURVE",
+"201 364 LINE",
+"184 296 OFFCURVE",
+"173 223 OFFCURVE",
+"173 143 CURVE",
+"174 63 LINE",
+"177 23 OFFCURVE",
+"184 -15 OFFCURVE",
+"196 -50 CURVE SMOOTH",
+"221 -122 OFFCURVE",
+"263 -171 OFFCURVE",
+"330 -171 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"291 -99 OFFCURVE",
+"265 -55 OFFCURVE",
+"257 -8 CURVE",
+"268 19 OFFCURVE",
+"297 37 OFFCURVE",
+"330 37 CURVE SMOOTH",
+"374 37 OFFCURVE",
+"401 8 OFFCURVE",
+"401 -32 CURVE SMOOTH",
+"401 -71 OFFCURVE",
+"377 -99 OFFCURVE",
+"334 -99 CURVE SMOOTH"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianZardig;
+lastChange = "2021-01-06 14:46:59 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"410 -119 OFFCURVE",
+"438 -108 OFFCURVE",
+"455 -85 CURVE",
+"455 6 LINE",
+"435 -22 OFFCURVE",
+"408 -36 OFFCURVE",
+"373 -36 CURVE SMOOTH",
+"346 -36 OFFCURVE",
+"324 -28 OFFCURVE",
+"307 -11 CURVE SMOOTH",
+"274 22 OFFCURVE",
+"260 79 OFFCURVE",
+"260 151 CURVE SMOOTH",
+"260 216 OFFCURVE",
+"270 287 OFFCURVE",
+"290 364 CURVE",
+"215 364 LINE",
+"198 296 OFFCURVE",
+"187 223 OFFCURVE",
+"187 143 CURVE",
+"191 63 LINE",
+"206 -46 OFFCURVE",
+"267 -119 OFFCURVE",
+"370 -119 CURVE SMOOTH"
+);
+}
+);
+width = 600;
+}
+);
+},
+{
+glyphname = MongolianTitem;
+lastChange = "2021-01-06 14:52:41 +0000";
+layers = (
+{
+layerId = UUID0;
+paths = (
+{
+closed = 1;
+nodes = (
+"423 -117 OFFCURVE",
+"477 -83 OFFCURVE",
+"514 -14 CURVE",
+"448 27 LINE",
+"431 -12 OFFCURVE",
+"394 -35 OFFCURVE",
+"351 -35 CURVE SMOOTH",
+"270 -35 OFFCURVE",
+"205 15 OFFCURVE",
+"161 94 CURVE SMOOTH",
+"117 173 OFFCURVE",
+"93 274 OFFCURVE",
+"93 374 CURVE SMOOTH",
+"93 432 OFFCURVE",
+"103 489 OFFCURVE",
+"122 545 CURVE SMOOTH",
+"157 649 OFFCURVE",
+"237 715 OFFCURVE",
+"348 715 CURVE SMOOTH",
+"427 715 OFFCURVE",
+"471 680 OFFCURVE",
+"496 592 CURVE",
+"514 444 LINE",
+"588 444 LINE",
+"580 676 OFFCURVE",
+"500 792 OFFCURVE",
+"348 792 CURVE SMOOTH",
+"247 792 OFFCURVE",
+"164 746 OFFCURVE",
+"105 667 CURVE SMOOTH",
+"48 590 OFFCURVE",
+"14 486 OFFCURVE",
+"14 374 CURVE SMOOTH",
+"14 253 OFFCURVE",
+"43 133 OFFCURVE",
+"100 38 CURVE SMOOTH",
+"156 -55 OFFCURVE",
+"240 -117 OFFCURVE",
+"351 -117 CURVE SMOOTH"
+);
+}
+);
+width = 600;
+}
+);
 },
 {
 glyphname = FVS1.V1;
