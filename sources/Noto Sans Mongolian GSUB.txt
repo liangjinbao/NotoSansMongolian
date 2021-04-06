@@ -2,7 +2,7 @@ FontDame GSUB table
 
 
 script table begin
-mong	default		0, 1, 2, 3, 4, 5
+mong	default		0, 1, 2, 3, 4, 5, 6
 script table end
 
 
@@ -11,9 +11,9 @@ feature table begin
 1	init	2, 6
 2	isol	0, 1, 5
 3	medi	3, 7
-4	rlig	8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,40
-5	vert	80
-
+4	rlig	8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,40,41,42,43,44,45,46,47
+5	vert	83
+6	vrt2	83
 feature table end
 
 lookup	0	ligature
@@ -42,7 +42,6 @@ u1831.isoV1	u1831	FVS1
 u1821.iso	u1820	FVS1
 u1820.isoV1	u1820	FVS2
 u1820.V1	u1820	FVS1
-u182C.isoV3	u182C	FVS4
 u182C.isoV2	u182C	FVS2
 u182C.isoV1	u182C	FVS1
 u1821.isoV1	u1821	FVS1
@@ -61,7 +60,6 @@ u1861.iso	u1861	FVS1
 u1835.V1	u1835	FVS1
 u182D.isoV1	u182D	FVS1
 u182D.isoV2	u182D	FVS2
-u182D.isoV3	u182D	FVS4
 u184E.iniFem	u184E	FVS1
 u185E.iso	u185E	FVS1
 u1873.iso	u1873	FVS1
@@ -75,7 +73,6 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-FVS4	FVS1	FVS1
 u184D.iniFem	u184D	FVS1
 u184E.iniFem	u184E	FVS1
 u1863.iniFem	u1863	FVS1
@@ -94,7 +91,6 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-FVS4	FVS1	FVS1
 u1845.medV1	u1845	FVS1
 u1844.medV1	u1844	FVS1
 u1846.medV1	u1846	FVS1
@@ -529,7 +525,7 @@ u1825.med	1
 u1826.med	1
 class definition end
 
-class-chain	1	1		1, 47
+class-chain	1	1		1, 50
 
 lookup end
 
@@ -611,9 +607,9 @@ u1835.iso	2
 u1820.iso	3
 class definition end
 
-class-chain	1	1		1, 48
-class-chain		1	1	1, 48
-class-chain		1	2,3	1, 48
+class-chain	1	1		1, 51
+class-chain		1	1	1, 51
+class-chain		1	2,3	1, 51
 lookup end
 
 lookup	10	reversechained
@@ -697,7 +693,7 @@ u1822.med	1
 u1822.ini	1
 class definition end
 
-class-chain	1	1		1, 49
+class-chain	1	1		1, 52
 lookup end
 
 lookup	12	single
@@ -1161,25 +1157,25 @@ u1827.med	4
 u1827.fin	4
 class definition end
 
-class-chain		1	1	1, 52
-class-chain		1	3	1, 78
-class-chain		1	4	1, 78
-class-chain	1	1		1, 50
-class-chain		2	2	1, 53
-class-chain		2	3	1, 53
-class-chain		2	4	1, 53
-class-chain	2	3		1, 55
-class-chain	1	4		1, 51
-class-chain	2	5	2	1, 54
-class-chain		6	2	1, 81
-class-chain		6	4	1, 81
+class-chain		1	1	1, 55
+class-chain		1	3	1, 81
+class-chain		1	4	1, 81
+class-chain	1	1		1, 53
+class-chain		2	2	1, 56
+class-chain		2	3	1, 56
+class-chain		2	4	1, 56
+class-chain	2	3		1, 58
+class-chain	1	4		1, 54
+class-chain	2	5	2	1, 57
+class-chain		6	2	1, 84
+class-chain		6	4	1, 84
 lookup end
 
 lookup	15	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	yes
+MarkAttachmentType	1
 
 backtrackclass definition begin
 u1828.ini	1
@@ -1198,20 +1194,7 @@ u1835.ini	1
 u183D.ini	1
 u182C.ini	1
 u182D.ini	1
-u182C.iniV2	2
-u182D.iniV2	2
-u182A.ini	3
-u182B.ini	3
-u1839.ini	3
-u183A.ini	3
-u183B.ini	3
-u182A.med	4
-u182B.med	4
-u1839.med	4
-u183A.med	4
-u183B.med	4
-u182C.medV2	5
-u182D.medV2	5
+
 class definition end
 
 class definition begin
@@ -1219,19 +1202,16 @@ u1823.fin	1
 u1824.fin	1
 u1825.fin	2
 u1826.fin	2
-u1820.fin	3
+FVS1	3
+FVS2	3
+FVS3	3
+FVS4	3
 class definition end
 
-class-chain	1	1		1, 56
-class-chain	3	1		1, 56
-class-chain	4	1		1, 56
-class-chain	1	2		1, 56
-class-chain	2	2		1, 56
-class-chain	3	2		1, 56
-class-chain	4	2		1, 79
-class-chain	5	2		1, 79
-class-chain	3	3		1, 79
-class-chain	4	3		1, 79
+class-chain	1	1,3		1, 81
+class-chain	1	2,3		1, 81
+class-chain	1	1		1, 59
+class-chain	1	2		1, 59
 
 lookup end
 
@@ -1239,7 +1219,7 @@ lookup	16	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-MarkAttachmentType	2
+IgnoreMarks	yes
 
 backtrackclass definition begin
 u182C.iniV2	1
@@ -1259,13 +1239,26 @@ u182D.medV2	4
 class definition end
 
 class definition begin
-u1821.fin	1
+u1820.fin	1
+u1821.fin	2
+u1823.fin	3
+u1824.fin	3
+u1825.fin	4
+u1826.fin	4
 class definition end
 
-class-chain	1	1		1, 83
-class-chain	2	1		1, 83
-class-chain	3	1		1, 83
-class-chain	4	1		1, 83
+class-chain	2	1		1, 82
+class-chain	3	1		1, 82
+class-chain	1	2		1, 86
+class-chain	2	2		1, 86
+class-chain	3	2		1, 86
+class-chain	4	2		1, 86
+class-chain	2	3		1, 59
+class-chain	3	3		1, 59
+class-chain	1	4		1, 59
+class-chain	2	4		1, 59
+class-chain	3	4		1, 82
+class-chain	4	4		1, 82
 
 lookup end
 
@@ -1273,7 +1266,7 @@ lookup	17	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	yes
+MarkAttachmentType	1
 
 class definition begin
 u1833.ini	1
@@ -1288,9 +1281,14 @@ u1824.finV1	1
 u1825.finV1	1
 u1826.finV1	1
 u1827.fin	1
+FVS1	2
+FVS2	2
+FVS3	2
+FVS4	2
 class definition end
 
-class-chain		1	1	1, 57
+class-chain		1	1,2	1, 81
+class-chain		1	1	1, 60
 
 lookup end
 
@@ -1356,9 +1354,9 @@ u1824.fin	2
 u1824.finV1	2
 class definition end
 
-class-chain		1	1	1, 58
-class-chain		1	2	1, 58
-class-chain		2	2	1, 58
+class-chain		1	1	1, 61
+class-chain		1	2	1, 61
+class-chain		2	2	1, 61
 
 lookup end
 
@@ -1379,9 +1377,9 @@ u1822.medFem	1
 u1822.fin	2
 class definition end
 
-class-chain		1	1	1, 59
-class-chain		2	1	1, 60
-class-chain		2	2	1, 60
+class-chain		1	1	1, 62
+class-chain		2	1	1, 63
+class-chain		2	2	1, 63
 
 lookup end
 
@@ -1540,11 +1538,11 @@ u1856.fin	2
 u184E.fin	2
 class definition end
 
-class-chain	1	2		1, 75
-class-chain	2	2		1, 75
-class-chain	2	3		1, 75
-class-chain		1	1	1, 78
-class-chain		1	2	1, 75
+class-chain	1	2		1, 78
+class-chain	2	2		1, 78
+class-chain	2	3		1, 78
+class-chain		1	1	1, 81
+class-chain		1	2	1, 78
 
 lookup end
 
@@ -1559,6 +1557,36 @@ backtrackclass definition begin
 hyphen	1
 endash	1
 emdash	1
+u182C	2
+u182C.iso	2
+u182C.isoV1	2
+u182C.isoV2	2
+u182C.isoV3	2
+u182C.ini	2
+u182C.iniV1	2
+u182C.iniV2	2
+u182C.iniV3	2
+u182C.med	2
+u182C.medV1	2
+u182C.medV2	2
+u182C.medV3	2
+u182C.medV4	2
+u182C.medV5	2
+u182D	2
+u182D.iso	2
+u182D.isoV1	2
+u182D.isoV2	2
+u182D.isoV3	2
+u182D.ini	2
+u182D.iniV1	2
+u182D.iniV2	2
+u182D.iniV3	2
+u182D.med	2
+u182D.medV1	2
+u182D.medV2	2
+u182D.medV3	2
+u182D.medV4	2
+u182D.medV5	2
 class definition end
 
 class definition begin
@@ -1577,11 +1605,12 @@ u1826.med	1
 u1873.med	1
 u1820.med	1
 u1860.med	2
+FVS1	3
 class definition end
 
-class-chain	1	1		1, 75
-class-chain	1	2		1, 76
-
+class-chain	1	1		1, 78
+class-chain	1	2		1, 79
+class-chain	2	3,3		1, 87
 lookup end
 
 lookup	22	chained
@@ -1760,16 +1789,16 @@ u1878.med	3
 u1878.fin	3
 class definition end
 
-class-chain		1	1	1, 75
-class-chain		1	3	1, 76
-class-chain		2	2	1, 75
-class-chain		3, 5		1, 75
-class-chain		3, 6		1, 75
-class-chain	1	4		1, 77
-class-chain		4	3	1, 75
-class-chain	1	5		1, 76
-class-chain	2	5		1, 76
-class-chain	3	7		1, 75
+class-chain		1	1	1, 78
+class-chain		1	3	1, 79
+class-chain		2	2	1, 78
+class-chain		3, 5		1, 78
+class-chain		3, 6		1, 78
+class-chain	1	4		1, 80
+class-chain		4	3	1, 78
+class-chain	1	5		1, 79
+class-chain	2	5		1, 79
+class-chain	3	7		1, 78
 
 lookup end
 
@@ -1810,9 +1839,9 @@ u1826.medV2	1
 u1821.medV1	1
 class definition end
 
-class-chain		1	1	1, 75
-class-chain	1	2		1, 75
-class-chain	2	3		1, 76
+class-chain		1	1	1, 78
+class-chain	1	2		1, 78
+class-chain	2	3		1, 79
 
 lookup end
 
@@ -1822,75 +1851,256 @@ IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 MarkAttachmentType	1
 
-glyph	MVS	u1820.iso		1, 61
-glyph	MVS	u1820.ini, u1834.med, u1820.fin		1, 62
-glyph	MVS	u1820.ini, u1834.med, u1820.med, u182D.medV1, u1820.med, u1828.fin		1, 62
-glyph	MVS	u1821.iso		1, 61
-glyph	MVS	u1822.iso		1, 61
-glyph	MVS	u1822.ini, u1836.med, u1820.med, u1828.fin		1, 63	2, 69
-glyph	MVS	u1822.iniFem, u1836.med, u1821.med, u1828.fin		1, 63	2, 69
-glyph	MVS	u1822.ini, u1836.med, u1820.med, u1837.fin		1, 63	2, 69
-glyph	MVS	u1822.iniFem, u1836.med, u1821.med, u1837.fin		1, 63	2, 69
-glyph	MVS	u1824.iso		1, 61
-glyph		u1824.ini, u1824.fin		1, 64
-glyph	MVS	u1824.ini, u1828.fin		1, 64
-glyph	MVS	u1824.ini, u1833.fin		1, 64
-glyph	MVS	u1826.iso		1, 61
-glyph		u1826.ini, u1826.fin		1, 64
-glyph	MVS	u1826.ini, u1828.fin		1, 64
-glyph	MVS	u1826.ini, u1833.fin		1, 64
-glyph	MVS	u1828.ini, u1826.medV1, u182D.medV2, u1821.med, u1828.fin		2, 65
-glyph	MVS	u1828.ini, u1826.medV1, u182D.medV2, u1826.med, u1833.fin		2, 65
-glyph		u182A.ini, u1826.medV1, u1826.fin		2, 65
-glyph	MVS	u182C.iniV2,u1826.finV1		2, 65
-glyph	MVS	u182F.ini, u1826.medV1, u182D.medV2, u1821.finV1		2, 65
-glyph	MVS	u1832.ini, u1824.finV1		2, 66
-glyph	MVS	u1832.ini, u1826.finV1		2, 66
-glyph	MVS	u1832.ini, u1826.medV1, u1837.fin		2, 65
-glyph	MVS	u1832.ini, u1826.medV1, u1828.medV1, u1822.fin		2, 65
-glyph	MVS	u1833.ini, u1820.med, u182D.fin		1, 67
-glyph	MVS	u1833.ini, u1820.med, u182D.medV1, u1820.med, u1828.fin		1, 67
-glyph	MVS	u1833.ini, u1820.med, u182C.medV2, u1822.fin		1, 67
-glyph	MVS	u1833.ini, u1821.med, u182D.finV1		1, 67
-glyph	MVS	u1833.ini, u1821.med, u182D.medV2, u1821.med, u1828.fin		1, 67
-glyph	MVS	u1833.ini, u1821.med, u182C.medV2, u1822.fin		1, 67
-glyph	MVS	u1833.ini, u1824.med, u182D.medV1, u1820.med, u1837.fin		1, 67
-glyph	MVS	u1833.ini, u1824.med, u1837.fin		1, 67
-glyph	MVS	u1833.ini, u1824.med, u1828.medV1, u1822.fin		1, 67
-glyph	MVS	u1833.iniV1, u1824.finV1		2, 66
-glyph	MVS	u1833.ini, u1826.medV1, u1837.fin		2, 65	1, 67
-glyph	MVS	u1833.ini, u1826.medV1, u1828.medV1, u1822.fin		2, 65	1, 67
-glyph	MVS	u1833.ini, u1826.medV1, u182D.medV2, u1821.med, u1837.fin		2, 65	1, 67
-glyph	MVS	u1833.iniV1, u1826.finV1		2, 66
-glyph	MVS	u1834.ini, u1826.finV1		2, 66
-glyph	MVS	u1834.ini, u1824.finV1		2, 66
-glyph	MVS	u1836.ini, u1822.fin		1,68
-glyph	MVS	u1836.ini, u1822.medFem, u1828.fin		1,68
-glyph	MVS	u1836.ini, u1826.medV1, u182E.fin		2, 65
-glyph	MVS	u1836.ini, u1826.medV1, u182E.med, u1830.med, u1821.med, u1828.fin		2, 65
-glyph	MVS	u1836.ini, u1826.medV1, u182D.medV2, u1821.med, u1828.fin		2, 65
-glyph	MVS	u1828.ini	u1844.med	1, 67
-glyph	MVS	u1828.ini	u1844.fin	1, 67
-glyph	MVS	u184E.ini	u1844.med	1, 67
-glyph	MVS	u184E.ini	u1844.fin	1, 67
-glyph	MVS	u185E.iso		1, 61
-glyph	MVS	u1873.iso		1, 61
-
+backtrackclass definition begin
+MVS	1
+class definition end
+class definition begin
+u1820.iso	1
+u1821.iso	1
+u1822.iso	1
+u1824.iso	1
+u1826.iso	1
+u185E.iso	1
+u1873.iso	1
+u1828.ini	2
+u184E.ini	2
+u1844.med	3
+u1844.fin	3
+class definition end
+lookaheadclass definition begin
+FVS1	1
+FVS2	1
+FVS3	1
+FVS4	1
+class definition end
+class-chain	1	1	1	1, 81
+class-chain	1	1		1, 64
+class-chain	1	2,3	1	1, 81
+class-chain	1	2,3		1, 70
 lookup end
 
-lookup	25	multiple
-MVS	MVS.V1	ZMARK
+lookup	25	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+MVS	1
+class definition end
+class definition begin
+u1820.ini	1
+class definition end
+lookaheadclass definition begin
+u1834.med	1
+u1820.med	2
+u182D.medV1	3
+u1828.fin	4
+u1820.fin	5
+FVS1	6
+FVS2	6
+FVS3	6
+FVS4	6
+class definition end
+class-chain	1	1	1,5,6	1, 81
+class-chain	1	1	1,5	1, 65
+class-chain	1	1	1,2,3,2,4,6	1, 81
+class-chain	1	1	1,2,3,2,4	1, 65
 lookup end
 
-lookup	26	ligature
-MVS.V1	MVS.V1	ZMARK
+lookup	26	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+MVS	1
+class definition end
+class definition begin
+u1822.ini	1
+u1822.iniFem	1
+u1836.med	2
+u1836.ini	3
+u1822.medFem	4
+u1828.fin	5
+class definition end
+lookaheadclass definition begin
+u1820.med	1
+u1821.med	1
+u1828.fin	2
+u1837.fin	2
+u1822.fin	3
+FVS1	4
+FVS2	4
+FVS3	4
+FVS4	4
+class definition end
+class-chain	1	1,2	1,2,4	1,81
+class-chain	1	1,2	1,2	1, 66	2, 72
+class-chain	1	3	3,4	1,81
+class-chain	1	3	3	1,71
+class-chain	1	3,4,5	4	1,81
+class-chain	1	3,4,5		1,71
 lookup end
 
-lookup	27	multiple
-MVS.V1	MVS.V1	ZMARK
+lookup	27	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+MVS	1
+class definition end
+class definition begin
+u1824.ini	1
+u1826.ini	1
+class definition end
+lookaheadclass definition begin
+u1828.fin	1
+u1833.fin	1
+u1824.fin	2
+u1826.fin	2
+FVS1	3
+FVS2	3
+FVS3	3
+FVS4	3
+class definition end
+class-chain		1	2,3	1,81
+class-chain		1	2	1, 67
+class-chain	1	1	1,3	1,81
+class-chain	1	1	1	1, 67
 lookup end
 
 lookup	28	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+MVS	1
+class definition end
+class definition begin
+u1832.ini	1
+u1833.ini	1
+u1824.med	2
+u1826.medV1	2
+u1824.finV1	3
+u1826.finV1	3
+u1833.iniV1	4
+u1834.ini	4
+class definition end
+lookaheadclass definition begin
+u1820.med	1
+u1821.med	1
+u182D.medV1	2
+u182D.medV2	2
+u182D.fin	3
+u182D.finV1	3
+u1828.fin	4
+u182C.medV2	5
+u1822.fin	6
+u1837.fin	7
+u1828.medV1	8
+FVS1	9
+FVS2	9
+FVS3	9
+FVS4	9
+class definition end
+class-chain	1	4,3	9	1,81
+class-chain	1	1	1,3,9	1, 81
+class-chain	1	1	1,2,1,4,9	1, 81
+class-chain	1	1	1,5,6,9	1, 81
+class-chain	1	1,3	9	1,81
+class-chain	1	1,2	7,9	1,81
+class-chain	1	1,2	8,6,9	1,81
+
+class-chain	1	4,3		2, 69
+class-chain	1	1	1,3	1, 70
+class-chain	1	1	1,2,1,4	1, 70
+class-chain	1	1	1,5,6	1, 70
+class-chain	1	1,3		1,70	2, 69
+class-chain	1	1,2	7	1,70	2, 68
+class-chain	1	1,2	8,6	1,70	2, 68
+
+lookup end
+
+lookup	29	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+MarkAttachmentType	1
+
+backtrackclass definition begin
+MVS	1
+u182A.ini	2
+class definition end
+class definition begin
+u1826.medV1	1
+u1824.med	1
+u1826.finV1	2
+u1833.ini	3
+u182E.fin	4
+u182E.med	5
+u1828.ini	6
+u1836.ini	7
+u182F.ini	8
+u182C.iniV2	9
+class definition end
+lookaheadclass definition begin
+u182D.medV2	1
+u182D.medV1	1
+u1820.med	2
+u1821.med	2
+u1828.fin	3
+u1833.fin	4
+u1837.fin	5
+u1826.fin	6
+u1826.med	6
+u1821.finV1	7
+u1830.med	8
+FVS1	9
+FVS2	9
+FVS3	9
+FVS4	9
+class definition end
+class-chain	1	3,1	1,2,5,9	1, 81
+class-chain	1	3,1	1,2,5	2, 68	1, 70
+class-chain	1	6,1	1,2,3,9	1, 81
+class-chain	1	6,1	1,2,3	2, 68
+class-chain	1	7,1	1,2,3,9	1, 81
+class-chain	1	7,1	1,2,3	2, 68
+class-chain	1	6,1	1,6,4,9	1, 81
+class-chain	1	6,1	1,6,4	2, 68
+class-chain	2	1	6,9	1, 81
+class-chain	2	1	6	1, 68
+class-chain	1	8,1	1,7,9	1, 81
+class-chain	1	8,1	1,7	2, 68
+class-chain	1	9,2	9	1, 81
+class-chain	1	9,2		2, 68
+class-chain	1	7,1,4	9	1, 81
+class-chain	1	7,1,4		2, 68
+class-chain	1	7,1,5	8,2,3,9	1, 81
+class-chain	1	7,1,5	8,2,3	2, 68
+
+lookup end
+
+
+lookup	30	multiple
+MVS	MVS.V1	ZMARK
+lookup end
+
+lookup	31	ligature
+MVS.V1	MVS.V1	ZMARK
+lookup end
+
+lookup	32	multiple
+MVS.V1	MVS.V1	ZMARK
+lookup end
+
+lookup	33	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1923,11 +2133,11 @@ u1821.isoV1	2
 
 class definition end
 
-class-chain	1	1	1,2	1, 72
+class-chain	1	1	1,2	1, 75
 
 lookup end
 
-lookup	29	chained
+lookup	34	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1954,12 +2164,12 @@ ZMARK	2
 u1820.isoV1	3
 u1821.isoV1	4
 class definition end
-class-chain		1	1	1, 73
-class-chain		2	1,2,3	1, 73
-class-chain		2	1,2,4	1, 82
+class-chain		1	1	1, 76
+class-chain		2	1,2,3	1, 76
+class-chain		2	1,2,4	1, 85
 lookup end
 
-lookup	30	chained
+lookup	35	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -1976,73 +2186,31 @@ u182D.medV1	1
 u182D.medV4	1
 class definition end
 
-class-chain	1	1		1, 70
+class-chain	1	1		1, 73
 
 lookup end
 
-lookup	31	ligature
+lookup	36	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-u1820.iso	u1820.isoV1	FVS3
-u1820.V1	u1820.isoV1	FVS1
-u1820.V1	u1820.iso	FVS1
-u1820.ini	u1820.iniV1	FVS2
-u1820.iniV1	u1820.ini	FVS1
-u1820.medV1	u1820.med	FVS1
-u1820.finV1	u1820.fin	FVS1
-u1820.fin	u1820.finV1	FVS2
-u1821.iso	u1821.isoV1	FVS2
-u1821.finV1	u1821.fin	FVS1
-u1821.fin	u1821.finV1	FVS2
-u1821.iniV1	u1821.ini	FVS1
-u1822.iso	u1822.isoV1	FVS3
-u1822.ini	u1822.iniV1	FVS2
-u1822.iniV1	u1822.ini	FVS1
-u1822.iniV1	u1822.iniFem	FVS1
-u1822.medV1	u1822.med	FVS1
-u1822.medV1	u1822.medV2	FVS1
-u1822.medV1	u1822.medFem	FVS1
-u1822.medV2	u1822.med	FVS2
-u1822.medV2	u1822.medFem	FVS2
-u1823.fin	u1823.finV1	FVS2
-u1823.finV1	u1823.fin	FVS1
-u1823.medV1	u1823.med	FVS1
-u1824.iso	u1824.isoV1	FVS3
-u1824.ini	u1824.iniV1	FVS2
-u1824.fin	u1824.finV1	FVS2
-u1824.finV1	u1824.fin	FVS1
-u1824.iniV1	u1824.ini	FVS1
-u1824.medV1	u1824.med	FVS1
-u1825.fin	u1825.finV1	FVS3
-u1825.fin	u1825.finV2	FVS3
-u1825.finV1	u1825.fin	FVS1
-u1825.finV1	u1825.finV2	FVS1
-u1825.finV2	u1825.fin	FVS2
-u1825.finV2	u1825.finV1	FVS2
-u1825.med	u1825.medV1	FVS3
-u1825.medV1	u1825.med	FVS1
-u1825.medV2	u1825.medV1	FVS2
-u1825.medV2	u1825.med	FVS2
-u1826.iniV1	u1826.ini	FVS1
-u1826.ini	u1826.iniV1	FVS2
-u1826.fin	u1826.finV1	FVS3
-u1826.fin	u1826.finV2	FVS3
-u1826.finV1	u1826.fin	FVS1
-u1826.finV1	u1826.finV2	FVS1
-u1826.finV2	u1826.fin	FVS2
-u1826.finV2	u1826.finV1	FVS2
-u1826.med	u1826.medV1	FVS3
-u1826.medV1	u1826.med	FVS1
-u1826.medV2	u1826.medV1	FVS2
-u1826.medV2	u1826.med	FVS2
-u1828.finV1	u1828.fin	FVS1
+
+u1828.med	u1828.med	FVS2
+u1828.medV1	u1828.medV1	FVS1
+u1828.medV2	u1828.medV2	FVS1
+u1828.fin	u1828.fin	FVS2
 u1828.iniV1	u1828.ini	FVS1
 u1828.medV1	u1828.med	FVS1
+u1828.finV1	u1828.fin	FVS1
 u1828.med	u1828.medV1	FVS2
 u1828.fin	u1828.medV2	FVS2
 u182A.finV1	u182A.fin	FVS1
+u182C.ini	u182C.ini	FVS3
+u182C.iniV2	u182C.iniV2	FVS2
+u182C.med	u182C.med	FVS3
+u182C.medV2	u182C.medV2	FVS2
+u182C.isoV3	u182C	FVS4
 u182C.isoV3	u182C.iso	FVS4
 u182C.ini	u182C.iniV2	FVS3
 u182C.iniV2	u182C.ini	FVS2
@@ -2058,6 +2226,16 @@ u182C.medV3	u182C.medV2	FVS4
 u182C.medV3	u182C.med	FVS4
 u182C.medV4	u182C.medV5	FVS1
 u182C.finV1	u182C.fin	FVS1
+u182D.ini	u182D.ini	FVS3
+u182D.iniV2	u182D.iniV2	FVS2
+u182D.med	u182D.med	FVS3
+u182D.medV1	u182D.medV1	FVS1
+u182D.medV2	u182D.medV2	FVS2
+u182D.medV4	u182D.medV4	FVS3
+u182D.medV5	u182D.medV5	FVS1
+u182D.fin	u182D.fin	FVS1
+u182D.finV1	u182D.finV1	FVS2
+u182D.isoV3	u182D	FVS4
 u182D.isoV3	u182D.iso	FVS4
 u182D.ini	u182D.iniV2	FVS3
 u182D.iniV1	u182D.ini	FVS1
@@ -2081,28 +2259,177 @@ u182D.finV2	u182D.fin	FVS3
 u182D.finV2	u182D.finV1	FVS3
 u182D.finV1	u182D.fin	FVS2
 u1830.finV1	u1830.fin	FVS1
-u1830.finV2	u1830.fin	FVS2
+u1831.ini	u1831.ini	FVS2
+u1831.iniV1	u1831.iniV1	FVS1
+u1831.med	u1831.med	FVS2
+u1831.medV1	u1831.medV1	FVS1
 u1831.ini	u1831.iniV1	FVS2
 u1831.iniV1	u1831.ini	FVS1
 u1831.med	u1831.medV1	FVS2
 u1831.medV1	u1831.med	FVS1
+u1832.medV1	u1832.medV1	FVS1
+u1832.med	u1832.med	FVS2
 u1832.medV1	u1832.med	FVS1
+u1832.med	u1832.medV1	FVS2
+u1833.iniV1	u1833.iniV1	FVS1
+u1833.ini	u1833.ini	FVS2
+u1833.medV1	u1833.medV1	FVS1
+u1833.med	u1833.med	FVS2
 u1833.finV1	u1833.fin	FVS1
 u1833.ini	u1833.iniV1	FVS2
 u1833.iniV1	u1833.ini	FVS1
 u1833.medV1	u1833.med	FVS1
 u1833.med	u1833.medV1	FVS2
 u1835.medV1	u1835.fin	FVS1
+u1836.ini	u1836.ini	FVS2
+u1836.iniV1	u1836.iniV1	FVS1
+u1836.med	u1836.med	FVS3
+u1836.medV1	u1836.medV1	FVS1
 u1836.iniV1	u1836.ini	FVS1
 u1836.med	u1836.medV1	FVS3
 u1836.medV1	u1836.med	FVS1
 u1836.medV2	u1836.med	FVS2
+u1838.medV2	u1838.medV2	FVS1
 u1838.med	u1838.medV1	FVS2
 u1838.medV1	u1838.med	FVS1
 u1838.finV1	u1838.fin	FVS1
 lookup end
 
-lookup	32	chained
+lookup	37	chained
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+
+backtrackclass definition begin
+u182C.ini	1
+u182C.iniV1	1
+u182C.med	1
+u182C.medV1	1
+u182D.ini	1
+u182D.iniV1	1
+u182D.med	1
+u182D.medV1	1
+u182C.iniV2	2
+u182C.iniV3	2
+u182C.medV2	2
+u182C.medV3	2
+u182D.iniV2	2
+u182D.iniV3	2
+u182D.medV2	2
+u182D.medV3	2
+
+class definition end
+
+class definition begin
+u1820.fin	1
+u1823.fin	1
+u1824.fin	1
+u1821.finV1	2
+u1825.finV1	3
+u1826.finV1	3
+u1825.finV2	3
+u1826.finV2	3
+class definition end
+class-chain	1	2		1, 88
+class-chain	1	3		1, 88
+lookup end
+
+lookup	38	ligature
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+
+u1820.iso	u1820.iso	FVS3
+u1820.ini	u1820.ini	FVS2
+u1820.fin	u1820.fin	FVS2
+u1820.finV1	u1820.finV1	FVS1
+u1820.iso	u1820.isoV1	FVS3
+u1820.V1	u1820.isoV1	FVS1
+u1820.V1	u1820.iso	FVS1
+u1820.ini	u1820.iniV1	FVS2
+u1820.iniV1	u1820.ini	FVS1
+u1820.medV1	u1820.med	FVS1
+u1820.finV1	u1820.fin	FVS1
+u1820.fin	u1820.finV1	FVS2
+u1821.iso	u1821.iso	FVS2
+u1821.fin	u1821.fin	FVS2
+u1821.finV1	u1821.finV1	FVS1
+u1821.iso	u1821.isoV1	FVS2
+u1821.finV1	u1821.fin	FVS1
+u1821.fin	u1821.finV1	FVS2
+u1821.iniV1	u1821.ini	FVS1
+u1822.iso	u1822.iso	FVS3
+u1822.iniV1	u1822.iniV1	FVS1
+u1822.ini	u1822.ini	FVS2
+u1822.iniFem	u1822.iniFem	FVS2
+u1822.med	u1822.med	FVS3
+u1822.medFem	u1822.medFem	FVS3
+u1822.medV2	u1822.medV2	FVS2
+u1822.iso	u1822.isoV1	FVS3
+u1822.ini	u1822.iniV1	FVS2
+u1822.iniV1	u1822.ini	FVS1
+u1822.iniV1	u1822.iniFem	FVS1
+u1822.medV1	u1822.med	FVS1
+u1822.medV1	u1822.medV2	FVS1
+u1822.medV1	u1822.medFem	FVS1
+u1822.medV2	u1822.med	FVS2
+u1822.medV2	u1822.medFem	FVS2
+u1823.fin	u1823.fin	FVS2
+u1823.finV1	u1823.finV1	FVS1
+u1823.fin	u1823.finV1	FVS2
+u1823.finV1	u1823.fin	FVS1
+u1823.medV1	u1823.med	FVS1
+u1824.iso	u1824.iso	FVS3
+u1824.ini	u1824.ini	FVS2
+u1824.iniV1	u1824.iniV1	FVS1
+u1824.fin	u1824.fin	FVS2
+u1824.finV1	u1824.finV1	FVS1
+u1824.iso	u1824.isoV1	FVS3
+u1824.ini	u1824.iniV1	FVS2
+u1824.fin	u1824.finV1	FVS2
+u1824.finV1	u1824.fin	FVS1
+u1824.iniV1	u1824.ini	FVS1
+u1824.medV1	u1824.med	FVS1
+u1825.med	u1825.med	FVS3
+u1825.medV1	u1825.medV1	FVS1
+u1825.fin	u1825.fin	FVS3
+u1825.finV1	u1825.finV1	FVS1
+u1825.finV2	u1825.finV2	FVS2
+u1825.fin	u1825.finV1	FVS3
+u1825.fin	u1825.finV2	FVS3
+u1825.finV1	u1825.fin	FVS1
+u1825.finV1	u1825.finV2	FVS1
+u1825.finV2	u1825.fin	FVS2
+u1825.finV2	u1825.finV1	FVS2
+u1825.med	u1825.medV1	FVS3
+u1825.medV1	u1825.med	FVS1
+u1825.medV2	u1825.medV1	FVS2
+u1825.medV2	u1825.med	FVS2
+u1826.ini	u1826.ini	FVS2
+u1826.iniV1	u1826.iniV1	FVS1
+u1826.med	u1826.med	FVS3
+u1826.medV1	u1826.medV1	FVS1
+u1826.fin	u1826.fin	FVS3
+u1826.finV1	u1826.finV1	FVS1
+u1826.finV2	u1826.finV2	FVS2
+u1826.iniV1	u1826.ini	FVS1
+u1826.ini	u1826.iniV1	FVS2
+u1826.fin	u1826.finV1	FVS3
+u1826.fin	u1826.finV2	FVS3
+u1826.finV1	u1826.fin	FVS1
+u1826.finV1	u1826.finV2	FVS1
+u1826.finV2	u1826.fin	FVS2
+u1826.finV2	u1826.finV1	FVS2
+u1826.med	u1826.medV1	FVS3
+u1826.medV1	u1826.med	FVS1
+u1826.medV2	u1826.medV1	FVS2
+u1826.medV2	u1826.med	FVS2
+
+lookup end
+
+lookup	39	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2151,89 +2478,25 @@ u1822.med	1
 u1822.medFem	1
 class definition end
 
-class-chain	1	1		1, 71
+class-chain	1	1		1, 74
 
 lookup end
 
-lookup	33	ligature
+lookup	40	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
 u1822.med	u1822.medV2	FVS3
+
 lookup end
 
-lookup	34	ligature
+
+lookup	41	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
-u1820.iso	u1820.iso	FVS3
-u1820.ini	u1820.ini	FVS2
-u1820.fin	u1820.fin	FVS2
-u1820.finV1	u1820.finV1	FVS1
-u1821.iso	u1821.iso	FVS2
-u1821.fin	u1821.fin	FVS2
-u1821.finV1	u1821.finV1	FVS1
-u1822.iso	u1822.iso	FVS3
-u1822.iniV1	u1822.iniV1	FVS1
-u1822.ini	u1822.ini	FVS2
-u1822.iniFem	u1822.iniFem	FVS2
-u1822.med	u1822.med	FVS3
-u1822.medFem	u1822.medFem	FVS3
-u1822.medV2	u1822.medV2	FVS2
-u1823.fin	u1823.fin	FVS2
-u1823.finV1	u1823.finV1	FVS1
-u1824.iso	u1824.iso	FVS3
-u1824.ini	u1824.ini	FVS2
-u1824.iniV1	u1824.iniV1	FVS1
-u1824.fin	u1824.fin	FVS2
-u1824.finV1	u1824.finV1	FVS1
-u1825.med	u1825.med	FVS3
-u1825.medV1	u1825.medV1	FVS1
-u1825.fin	u1825.fin	FVS3
-u1825.finV1	u1825.finV1	FVS1
-u1825.finV2	u1825.finV2	FVS2
-u1826.ini	u1826.ini	FVS2
-u1826.iniV1	u1826.iniV1	FVS1
-u1826.med	u1826.med	FVS3
-u1826.medV1	u1826.medV1	FVS1
-u1826.fin	u1826.fin	FVS3
-u1826.finV1	u1826.finV1	FVS1
-u1826.finV2	u1826.finV2	FVS2
-u1828.med	u1828.med	FVS2
-u1828.medV1	u1828.medV1	FVS1
-u1828.medV2	u1828.medV2	FVS1
-u1828.fin	u1828.fin	FVS2
-u182C.ini	u182C.ini	FVS3
-u182C.iniV2	u182C.iniV2	FVS2
-u182C.med	u182C.med	FVS3
-u182C.medV2	u182C.medV2	FVS2
-u182D.ini	u182D.ini	FVS3
-u182D.iniV2	u182D.iniV2	FVS2
-u182D.med	u182D.med	FVS3
-u182D.medV1	u182D.medV1	FVS1
-u182D.medV2	u182D.medV2	FVS2
-u182D.medV4	u182D.medV4	FVS3
-u182D.medV5	u182D.medV5	FVS1
-u182D.fin	u182D.fin	FVS1
-u182D.finV1	u182D.finV1	FVS2
-u1831.ini	u1831.ini	FVS2
-u1831.iniV1	u1831.iniV1	FVS1
-u1831.med	u1831.med	FVS2
-u1831.medV1	u1831.medV1	FVS1
-u1832.med	u1832.medV1	FVS2
-u1832.med	u1832.med	FVS2
-u1832.medV1	u1832.medV1	FVS1
-u1833.iniV1	u1833.iniV1	FVS1
-u1833.ini	u1833.ini	FVS2
-u1833.medV1	u1833.medV1	FVS1
-u1833.med	u1833.med	FVS2
-u1836.ini	u1836.ini	FVS2
-u1836.iniV1	u1836.iniV1	FVS1
-u1836.med	u1836.med	FVS3
-u1836.medV1	u1836.medV1	FVS1
-u1838.medV2	u1838.medV2	FVS1
 MongolianGejige	u182E.iso	FVS3
 MongolianEber	u182F.iso	FVS3
 MongolianSingleDot	u1828.iso	FVS3
@@ -2245,28 +2508,30 @@ MongolianDoubleDotB	u1831.iso	FVS3
 MongolianTail	u1825.iso	FVS3
 lookup end
 
-lookup	35	multiple
+
+
+lookup	42	multiple
 FVS1	FVS1.V1	ZMARK
 FVS2	FVS2.V1	ZMARK
 FVS3	FVS3.V1	ZMARK
 FVS4	FVS4.V1	ZMARK
 lookup end
 
-lookup	36	ligature
+lookup	43	ligature
 FVS1.V1	FVS1.V1	ZMARK
 FVS2.V1	FVS2.V1	ZMARK
 FVS3.V1	FVS3.V1	ZMARK
 FVS4.V1	FVS4.V1	ZMARK
 lookup end
 
-lookup	37	multiple
+lookup	44	multiple
 FVS1.V1	FVS1.V1	ZMARK
 FVS2.V1	FVS2.V1	ZMARK
 FVS3.V1	FVS3.V1	ZMARK
 FVS4.V1	FVS4.V1	ZMARK
 lookup end
 
-lookup	38	chained
+lookup	45	chained
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2516,11 +2781,11 @@ u180A	1
 ZMARK	2
 class definition end
 
-class-chain		1	2,1	1, 74
+class-chain		1	2,1	1, 77
 
 lookup end
 
-lookup	39	single
+lookup	46	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -2530,7 +2795,7 @@ u180A	u180A.ini
 
 lookup end
 
-lookup	40	ligature
+lookup	47	ligature
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3411,7 +3676,7 @@ u1846_1843.fin	u1846.med	u1843.fin
 u1848_1843.fin	u1848.med	u1843.fin
 lookup end
 
-lookup	47	single
+lookup	50	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3421,7 +3686,7 @@ u1825.med	u1825.medV1
 u1826.med	u1826.medV1
 lookup end
 
-lookup	48	single
+lookup	51	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3431,7 +3696,7 @@ u1822.iniFem	u1822.ini
 u1822.medFem	u1822.med
 lookup end
 
-lookup	49	single
+lookup	52	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3440,7 +3705,7 @@ u1822.med	u1822.medFem
 u1822.ini	u1822.iniFem
 lookup end
 
-lookup	50	single
+lookup	53	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3450,7 +3715,7 @@ u182D.medV2	u182D.med
 u182C.medV2	u182C.med
 lookup end
 
-lookup	51	single
+lookup	54	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3459,7 +3724,7 @@ IgnoreMarks	yes
 u182D.finV1	u182D.fin
 lookup end
 
-lookup	52	single
+lookup	55	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3468,7 +3733,7 @@ u182C.medV2	u182C.med
 u182D.medV2	u182D.medV1
 lookup end
 
-lookup	53	single
+lookup	56	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3477,7 +3742,7 @@ u182C.ini	u182C.iniV2
 u182D.ini	u182D.iniV2
 lookup end
 
-lookup	54	single
+lookup	57	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3487,7 +3752,7 @@ u182C.med	u182C.medV2
 u182D.med	u182D.medV2
 lookup end
 
-lookup	55	single
+lookup	58	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3496,7 +3761,7 @@ IgnoreMarks	yes
 u182D.fin	u182D.finV1
 lookup end
 
-lookup	56	single
+lookup	59	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3508,16 +3773,16 @@ u1825.fin	u1825.finV1
 u1826.fin	u1826.finV1
 lookup end
 
-lookup	57	single
+lookup	60	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-IgnoreMarks	yes
+MarkAttachmentType	1
 
 u1833.ini	u1833.iniV1
 lookup end
 
-lookup	58	single
+lookup	61	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3528,7 +3793,7 @@ u1833.med	u1833.medV1
 u182D.med	u182D.medV1
 lookup end
 
-lookup	59	single
+lookup	62	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3537,7 +3802,7 @@ IgnoreMarks	yes
 u1831.ini	u1831.iniV1
 lookup end
 
-lookup	60	single
+lookup	63	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3546,7 +3811,7 @@ IgnoreMarks	yes
 u1831.med	u1831.medV1
 lookup end
 
-lookup	61	single
+lookup	64	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3562,7 +3827,7 @@ u1873.iso	u1873.fin
 
 lookup end
 
-lookup	62	single
+lookup	65	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3571,7 +3836,7 @@ MarkAttachmentType	1
 u1820.ini	u1820.iniV1
 lookup end
 
-lookup	63	single
+lookup	66	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3581,7 +3846,7 @@ u1822.ini	u1822.iniV1
 u1822.iniFem	u1822.iniV1
 lookup end
 
-lookup	64	single
+lookup	67	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3591,7 +3856,7 @@ u1824.ini	u1824.iniV1
 u1826.ini	u1826.iniV1
 lookup end
 
-lookup	65	single
+lookup	68	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3601,7 +3866,7 @@ u1826.medV1	u1826.med
 u1826.finV1	u1826.finV2
 lookup end
 
-lookup	66	single
+lookup	69	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3611,7 +3876,7 @@ u1826.finV1	u1826.fin
 u1824.finV1	u1824.fin
 lookup end
 
-lookup	67	single
+lookup	70	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3623,7 +3888,7 @@ u184E.ini	u184E.iniFem
 
 lookup end
 
-lookup	68	single
+lookup	71	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3632,7 +3897,7 @@ MarkAttachmentType	1
 u1836.ini	u1836.iniV1
 lookup end
 
-lookup	69	single
+lookup	72	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3642,7 +3907,7 @@ u1836.med	u1836.medV1
 lookup end
 
 
-lookup	70	single
+lookup	73	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3652,7 +3917,7 @@ u182D.medV1	u182D.med
 u182D.medV4	u182D.medV5
 lookup end
 
-lookup	71	single
+lookup	74	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3662,11 +3927,11 @@ u1822.med	u1822.medV2
 u1822.medFem	u1822.medV2
 lookup end
 
-lookup	72	single
+lookup	75	single
 MVS.V1	MVS.V2
 lookup end
 
-lookup	73	single
+lookup	76	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3686,11 +3951,11 @@ u182D.finV1	u182D.medV4
 u1835.iso	u1835.V1
 lookup end
 
-lookup	74	single
+lookup	77	single
 MVS.V1	MVS.V3
 lookup end
 
-lookup	75	single
+lookup	78	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3727,7 +3992,7 @@ u1823.fin	u1823.finV1
 
 lookup end
 
-lookup	76	single
+lookup	79	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3742,7 +4007,7 @@ u1847.med	u1847.medV2
 lookup end
 
 
-lookup	77	single
+lookup	80	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3755,7 +4020,7 @@ u1874.med	u1874.medFem
 lookup end
 
 
-lookup	78	single
+lookup	81	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3765,18 +4030,19 @@ IgnoreMarks	no
 space	space
 
 lookup end
-lookup	79	single
+lookup	82	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	yes
+
 u1825.fin	u1825.finV2
 u1826.fin	u1826.finV2
 u1820.fin	u1820.finV1
 u1821.fin	u1821.finV1
 lookup end
 
-lookup	80	single
+lookup	83	single
 
 RightToLeft	no
 IgnoreBaseGlyphs	no
@@ -3826,7 +4092,7 @@ quotedblright	quotedblright.v
 quotedbl	quotedbl.v
 lookup end
 
-lookup	81	single
+lookup	84	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3836,7 +4102,7 @@ u1832.med	u1832.medV1
 lookup end
 
 
-lookup	82	single
+lookup	85	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
@@ -3846,10 +4112,30 @@ u182D.fin	u182D.medV5
 u182D.finV1	u182D.medV5
 
 lookup end
-lookup	83	single
+lookup	86	single
 RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
-MarkAttachmentType	2
+MarkAttachmentType	1
 u1821.fin	u1821.finV1
+lookup end
+
+lookup	87	ligature
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	no
+FVS4	FVS1	FVS1
+lookup end
+
+lookup	88	single
+RightToLeft	no
+IgnoreBaseGlyphs	no
+IgnoreLigatures	no
+IgnoreMarks	yes
+u1821.finV1	u1821.fin
+u1825.finV1	u1825.fin
+u1826.finV1	u1826.fin
+u1825.finV2	u1825.fin
+u1826.finV2	u1826.fin
 lookup end
