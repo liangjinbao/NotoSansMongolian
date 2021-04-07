@@ -2364,8 +2364,6 @@ u1822.iso	u1822.iso	FVS3
 u1822.iniV1	u1822.iniV1	FVS1
 u1822.ini	u1822.ini	FVS2
 u1822.iniFem	u1822.iniFem	FVS2
-u1822.med	u1822.med	FVS3
-u1822.medFem	u1822.medFem	FVS3
 u1822.medV2	u1822.medV2	FVS2
 u1822.iso	u1822.isoV1	FVS3
 u1822.ini	u1822.iniV1	FVS2
@@ -2487,6 +2485,8 @@ RightToLeft	no
 IgnoreBaseGlyphs	no
 IgnoreLigatures	no
 IgnoreMarks	no
+u1822.med	u1822.med	FVS3
+u1822.medFem	u1822.medFem	FVS3
 u1822.med	u1822.medV2	FVS3
 
 lookup end
